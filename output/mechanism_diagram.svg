@@ -1,0 +1,184 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1000" width="100%" height="100%" style="background-color: #ffffff;">
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#000000" />
+    </marker>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#d32f2f" />
+    </marker>
+    <style>
+      .box { fill: #ffffff; stroke: #000000; stroke-width: 1.5px; }
+      .box-heavy { fill: #f9f9f9; stroke: #000000; stroke-width: 2.5px; }
+      .text-main { font-family: 'Microsoft YaHei', sans-serif; font-weight: bold; font-size: 14.5px; fill: #000000; text-anchor: middle; dominant-baseline: middle; }
+      .text-sub { font-family: 'Microsoft YaHei', sans-serif; font-size: 13px; fill: #333333; text-anchor: middle; dominant-baseline: middle; }
+      .text-highlight { font-family: 'Microsoft YaHei', sans-serif; font-weight: bold; font-size: 13px; fill: #d32f2f; text-anchor: middle; dominant-baseline: middle; }
+      .text-label-black { font-family: 'Microsoft YaHei', sans-serif; font-weight: bold; font-size: 13px; fill: #000000; text-anchor: middle; dominant-baseline: middle; }
+      .text-label-red { font-family: 'Microsoft YaHei', sans-serif; font-weight: bold; font-size: 12px; fill: #d32f2f; text-anchor: middle; dominant-baseline: middle; }
+      .text-small { font-family: 'Microsoft YaHei', sans-serif; font-size: 11.5px; fill: #333333; text-anchor: middle; dominant-baseline: middle; }
+      .line-arrow { stroke: #000000; stroke-width: 1.2px; fill: none; marker-end: url(#arrow); }
+      .line-arrow-red { stroke: #d32f2f; stroke-width: 1.5px; fill: none; marker-end: url(#arrow-red); stroke-dasharray: 7, 3; }
+      .line-dashed-arrow { stroke: #000000; stroke-width: 1.2px; fill: none; stroke-dasharray: 6, 4; marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       LAYER 1: 新质生产力 X → 三个维度
+       ══════════════════════════════════════════════════════════════ -->
+  <path class="line-arrow" d="M 180 500 L 210 500 L 210 125 L 240 125" />
+  <path class="line-arrow" d="M 180 500 L 210 500 L 210 205 L 240 205" />
+  <path class="line-arrow" d="M 180 500 L 210 500 L 210 285 L 240 285" />
+  <path class="line-arrow" d="M 180 500 L 210 500 L 210 415 L 240 415" />
+  <path class="line-arrow" d="M 180 500 L 210 500 L 210 595 L 240 595" />
+  <path class="line-arrow" d="M 180 500 L 210 500 L 210 820 L 240 820" />
+
+  <!-- ══════════════════════════════════════════════════════════════
+       LAYER 2: 三个维度 → H1 (全要素生产率)
+       ══════════════════════════════════════════════════════════════ -->
+  <path class="line-arrow" d="M 420 125 L 450 125 L 450 195 L 480 195" />
+  <path class="line-arrow" d="M 420 205 L 480 205" />
+  <path class="line-arrow" d="M 420 285 L 450 285 L 450 215 L 480 215" />
+
+  <!-- ══════════════════════════════════════════════════════════════
+       LAYER 3: H3 区域微观异质性 → 东部 / 中西
+       ══════════════════════════════════════════════════════════════ -->
+  <path class="line-arrow" d="M 420 415 L 450 415 L 450 375 L 480 375" />
+  <path class="line-arrow" d="M 420 415 L 450 415 L 450 455 L 480 455" />
+
+  <!-- ══════════════════════════════════════════════════════════════
+       LAYER 4: H4 产业结构高级化 → 基期产业结构禀赋 → 两条路径
+       ══════════════════════════════════════════════════════════════ -->
+  <!-- H4 → 基期产业结构禀赋 -->
+  <path class="line-arrow" d="M 420 595 L 480 595" />
+
+  <!-- 基期产业结构禀赋 → 向右分支 → 两条路径 -->
+  <path class="line-arrow" d="M 710 597 L 755 597 L 755 527 L 730 527" />
+  <path class="line-arrow" d="M 755 597 L 755 677 L 730 677" />
+  <text class="text-label-black" x="780" y="555">越过结构门槛</text>
+  <text class="text-label-black" x="780" y="645">未越过门槛</text>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       LAYER 5: H2 空间溢出与博弈 → 涓滴 / 极化
+       ══════════════════════════════════════════════════════════════ -->
+  <path class="line-arrow" d="M 420 820 L 450 820 L 450 775 L 480 775" />
+  <path class="line-arrow" d="M 420 820 L 450 820 L 450 855 L 480 855" />
+
+  <!-- ══════════════════════════════════════════════════════════════
+       LAYER 6: 右侧节点 → Y (最终结果)
+       ══════════════════════════════════════════════════════════════ -->
+  <!-- H1 → Y 本地 -->
+  <path class="line-arrow" d="M 730 205 L 790 205 L 790 420 L 950 420" />
+
+  <!-- H3 东部 → Y 本地 -->
+  <path class="line-arrow" d="M 730 375 L 810 375 L 810 440 L 950 440" />
+
+  <!-- H3 中西 → Y 本地 -->
+  <path class="line-arrow" d="M 730 455 L 830 455 L 830 460 L 950 460" />
+
+  <!-- H4 两条路径的合并与分流（钻石结构） -->
+  <!-- 高端生产性服务业集聚 → 合并节点 -->
+  <path class="line-arrow" d="M 730 525 L 790 525 L 790 595 L 810 595" />
+  <!-- 传统制造数智化 → 合并节点 -->
+  <path class="line-arrow" d="M 730 675 L 790 675 L 790 605 L 810 605" />
+
+  <text class="text-label-black" x="840" y="590">全样本总效应抵消</text>
+  <text class="text-label-black" x="840" y="610">（遮掩效应）</text>
+
+  <!-- 遮掩 → 解耦 → Y 邻近 -->
+  <path class="line-dashed-arrow" d="M 890 595 L 920 595 L 920 480 L 950 480" />
+  <text class="text-highlight" x="920" y="535">解耦</text>
+
+  <!-- H2 涓滴 + 极化 → Y 邻近 -->
+  <path d="M 730 775 L 760 775 L 760 815" fill="none" stroke="#000000" stroke-width="1.2" />
+  <path d="M 730 855 L 760 855 L 760 815" fill="none" stroke="#000000" stroke-width="1.2" />
+  <path class="line-arrow" d="M 760 815 L 950 815" />
+  <text class="text-label-black" x="825" y="790">动态时空博弈</text>
+  <text class="text-label-black" x="825" y="806">（涓滴占优 → 极化反超）</text>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       CROSS-CONNECTION: H3 东部 → 越过结构门槛路径
+       ══════════════════════════════════════════════════════════════ -->
+  <path class="line-arrow-red" d="M 750 375 L 750 527" />
+  <text class="text-label-red" x="690" y="450">叠加赋能</text>
+  <text class="text-label-red" x="690" y="467">（跨越结构约束）</text>
+  <text class="text-small" x="690" y="490">制度红利叠加（催生门槛跃迁）</text>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       BOXES (back-to-front so text sits on top)
+       ══════════════════════════════════════════════════════════════ -->
+
+  <!-- 新质生产力 X（左侧起点） -->
+  <rect class="box-heavy" x="40" y="475" width="140" height="50" />
+  <text class="text-main" x="110" y="500">新质生产力 X</text>
+
+  <!-- 三个维度 -->
+  <rect class="box" x="240" y="100" width="180" height="50" />
+  <text class="text-main" x="330" y="115">新质劳动者</text>
+  <text class="text-sub" x="330" y="135">人力资本提升</text>
+
+  <rect class="box" x="240" y="180" width="180" height="50" />
+  <text class="text-main" x="330" y="195">新质劳动资料</text>
+  <text class="text-sub" x="330" y="215">AI / 大数据 / 算力</text>
+
+  <rect class="box" x="240" y="260" width="180" height="50" />
+  <text class="text-main" x="330" y="275">新质劳动对象</text>
+  <text class="text-sub" x="330" y="295">数据与前沿技术要素</text>
+
+  <!-- H3 区域微观异质性 -->
+  <rect class="box" x="240" y="395" width="180" height="40" />
+  <text class="text-main" x="330" y="415">区域微观异质性 (H3)</text>
+
+  <!-- H4 产业结构高级化（上移至 y=575 以配合新结构） -->
+  <rect class="box" x="240" y="575" width="180" height="40" />
+  <text class="text-main" x="330" y="595">产业结构重塑 (H4)</text>
+
+  <!-- H2 空间溢出与博弈 -->
+  <rect class="box" x="240" y="800" width="180" height="40" />
+  <text class="text-main" x="330" y="820">空间溢出与动态博弈 (H2)</text>
+
+  <!-- H1 全要素生产率 -->
+  <rect class="box" x="480" y="180" width="250" height="50" />
+  <text class="text-main" x="605" y="195">全要素生产率提升 (H1)</text>
+  <text class="text-sub" x="605" y="215">(技术进步与资源配置优化)</text>
+
+  <!-- H3 子节点 -->
+  <rect class="box" x="480" y="350" width="250" height="50" />
+  <text class="text-main" x="605" y="365">东部地区</text>
+  <text class="text-sub" x="605" y="385">(政府治理效能 / 制度软环境)</text>
+
+  <rect class="box" x="480" y="430" width="250" height="50" />
+  <text class="text-main" x="605" y="445">中西部地区</text>
+  <text class="text-sub" x="605" y="465">(后发优势 / 更高边际赋能)</text>
+
+  <!-- ★ 基期产业结构禀赋（新节点） -->
+  <rect class="box" x="480" y="575" width="230" height="45" rx="4" ry="4" />
+  <text class="text-main" x="595" y="598">基期产业结构禀赋（二产占比 S₂）</text>
+
+  <!-- ★ H4 两条路径终点 -->
+  <rect class="box" x="480" y="500" width="250" height="55" />
+  <text class="text-main" x="605" y="518">高端生产性服务业集聚</text>
+  <text class="text-sub" x="605" y="540">（致M值跃升）</text>
+
+  <rect class="box" x="480" y="650" width="250" height="55" />
+  <text class="text-main" x="605" y="668">传统制造数智化</text>
+  <text class="text-sub" x="605" y="690">（实体底盘扩张，致M值回落）</text>
+
+  <!-- H2 子节点 -->
+  <rect class="box" x="480" y="750" width="250" height="50" />
+  <text class="text-main" x="605" y="765">正向：涓滴效应</text>
+  <text class="text-sub" x="605" y="785">(创新辐射与底层技术外溢)</text>
+
+  <rect class="box" x="480" y="830" width="250" height="50" />
+  <text class="text-main" x="605" y="845">负向：极化效应</text>
+  <text class="text-sub" x="605" y="865">(宏观竞争挤出与要素虹吸)</text>
+
+  <!-- Y 结果框 -->
+  <rect class="box-heavy" x="950" y="405" width="180" height="110" />
+  <text class="text-main" x="1040" y="450">本地区高质量</text>
+  <text class="text-main" x="1040" y="475">发展 Y</text>
+
+  <rect class="box-heavy" x="950" y="780" width="180" height="80" />
+  <text class="text-main" x="1040" y="810">邻近地区</text>
+  <text class="text-main" x="1040" y="835">高质量发展</text>
+
+</svg>

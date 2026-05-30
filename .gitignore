@@ -1,0 +1,20 @@
+.claude/
+blog-community/
+unpacked_*/
+unpacked_paper/
+media/
+paper_edited.md
+*.pyc
+__pycache__/
+
+# Old figures (nature-style versions in figures/)
+boxplot_distribution.png
+sorted_bar_chart.png
+cate_distribution_dml.png
+Moran_*.png
+三大地带新质生产力演进折线图.png
+新质生产力_三维核密度演进图.png
+
+dr.py
+demo_figure.py
+作品全文-修订版.docx
